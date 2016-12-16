@@ -21,9 +21,7 @@ public class LivrePOJO implements Serializable {
 	private int qte;
 	private String image;
 
-	@ManyToOne
-	@JoinColumn(name="cat_id")
-	private CategoriePOJO categorie;
+
 
 	public LivrePOJO() {
 		// TODO Auto-generated constructor stub
@@ -77,13 +75,6 @@ public class LivrePOJO implements Serializable {
 		this.image = image;
 	}
 
-	public CategoriePOJO getCategorie() {
-		return categorie;
-	}
-
-	public void setCategorie(CategoriePOJO categorie) {
-		this.categorie = categorie;
-	}
 
 
 }

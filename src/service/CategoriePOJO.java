@@ -10,17 +10,9 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="categorie")
-@NamedQueries ({
-	@NamedQuery(name="categorie.All", query="SELECT categorie FROM CategoriePOJO as categorie"),
-	@NamedQuery(name="categorie.Select", query="SELECT categorie FROM CategoriePOJO categorie WHERE categorie.id = :cle")
-})
+
 public class CategoriePOJO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String nom;
 	private String description;
