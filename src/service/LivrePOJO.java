@@ -21,8 +21,6 @@ public class LivrePOJO implements Serializable {
 	private int qte;
 	private String image;
 
-
-
 	public LivrePOJO() {
 		// TODO Auto-generated constructor stub
 	}
@@ -74,7 +72,5 @@ public class LivrePOJO implements Serializable {
 	public void setImage(String image) {
 		this.image = image;
 	}
-
-
 
 }
